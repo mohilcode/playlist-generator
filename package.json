@@ -1,0 +1,37 @@
+{
+  "name": "asana-spotify-server",
+  "version": "1.0.0",
+  "description": "MCP server for Asana task-based Spotify playlist generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "asana-spotify-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "asana",
+    "spotify",
+    "productivity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.8",
+    "dotenv": "^16.4.5",
+    "spotify-web-api-node": "^5.0.2",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/spotify-web-api-node": "^5.0.11",
+    "typescript": "^5.7.2"
+  }
+}
